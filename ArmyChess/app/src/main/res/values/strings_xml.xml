@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ArmyChess</string>
+    <string name="select_army">Selecciona tu ejército</string>
+    <string name="start_game">Iniciar partida</string>
+    <string name="loading">Cargando...</string>
+</resources>

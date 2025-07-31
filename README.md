@@ -1,47 +1,56 @@
-# ArmyChess v0.4
+# 🧠 ArmyChess - Juego de Ajedrez con Ejércitos Históricos
 
-✅ Turnos Jugador vs IA:
-El jugador (Napoleón) mueve primero.
+ArmyChess es un juego de ajedrez educativo y estratégico donde cada jugador selecciona un ejército basado en líderes históricos como Napoleón, Stalin, Mao Zedong, entre otros. Cada ejército tiene su propio fondo de batalla y biografía ilustrativa.
 
-La IA (Stalin) responde con una jugada simple al azar.
+---
 
-Cambios de turno automáticos.
+## 🚀 Características
+- ♟️ Tablero de ajedrez interactivo con Jetpack Compose
+- 👑 Selector de ejército con caricaturas y biografías
+- 🎖️ Fondos dinámicos basados en batallas históricas
+- 🧠 IA simple para jugar contra el CPU
+- 🎮 Modo multijugador local (1v1)
 
-✅ Animaciones básicas:
-Resaltado de celda seleccionada (amarillo).
+---
 
-Captura visual (pieza eliminada de la lista).
+## 📦 Estructura del Proyecto
+```
+app/
+├── java/com/armychess/
+│   ├── MainActivity.kt
+│   ├── game/logic/Army.kt
+│   ├── ui/screens/ArmySelector.kt, BoardScreen.kt
+│   └── ui/theme/Color.kt, Theme.kt, Type.kt
+├── res/
+│   ├── drawable/bg_*.jpg  ← fondos de batalla por ejército
+│   └── values/strings.xml, themes.xml, colors.xml
+```
 
-Movimiento directo sin efectos visuales por ahora (puedo agregar desplazamiento animado si deseas).
+---
 
-🧩 Archivos nuevos:
-GameController.kt: controla lógica de juego, turnos, IA y captura.
+## 🛠️ Requisitos
+- Android Studio Flamingo o Narwhal (1.1.14 o superior)
+- SDK mínimo: 24 (Android 7.0)
+- SDK objetivo: 34
 
-BoardScreen.kt: adaptado para turnos y clics en celdas.
+---
 
-MainScreen.kt: integra el selector y muestra una imagen de fondo dinamica (cambia con el general)
+## ▶️ Cómo ejecutar
+1. Clona el repositorio y abre en Android Studio
+2. Espera a que Gradle sincronice
+3. Ejecuta el proyecto en un emulador o dispositivo físico
 
-ArmySelector.kt: se agrega el metodo para insertar imagenes de fondo por cada general
+---
 
-ArmyChess/
-├── app/
-│   └── src/
-│       └── main/
-│           ├── java/
-│           │   └── com/
-│           │       └── armychess/
-│           │           ├── game/
-│           │           │   ├── ai/
-│           │           │   │   └── ChessAI.kt         ← IA básica
-│           │           │   ├── logic/
-│           │           │   │   ├── Piece.kt           ← Definición de piezas y ejércitos
-│           │           │   │   └── GameController.kt  ← NUEVO: Turnos, movimiento y captura
-│           │           └── ui/
-│           │               └── screens/
-│           │                   └── BoardScreen.kt      ← Tablero interactivo + turnos
-|           |                   |__ army_selector.ui_kt ← Menu para seleccionar el general y su ejercito
-|           |                   |__ MainScreen.kt       ← Integra el selector de imagen y muestra imagen de fondo dinamica
-│           ├── res/
-│           │   ├── drawable/                          ← Fondos, íconos, imágenes
-│           │   └── values/                            ← Strings, temas, estilos
-├── README.md 
+## ✨ Créditos
+- Arte generado con IA basado en líderes históricos de dominio público
+- Desarrollado con Jetpack Compose y Material 3
+
+---
+
+## 🔜 Próximas funciones
+- Animaciones de ataque al capturar piezas
+- Reglas personalizadas por ejército
+- Modo historia por campaña histórica
+
+¡Que comience la batalla por la historia!
