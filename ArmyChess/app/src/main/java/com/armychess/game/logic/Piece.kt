@@ -1,4 +1,3 @@
-
 package com.armychess.game.logic
 
 enum class PieceType { KING, QUEEN, ROOK, BISHOP, KNIGHT, PAWN }
@@ -8,5 +7,5 @@ data class Piece(
     val type: PieceType,
     val army: Army,
     var row: Int,
-    var col: Int
+    var col: Int
 )

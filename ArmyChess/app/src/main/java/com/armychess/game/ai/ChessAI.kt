@@ -1,4 +1,3 @@
-
 package com.armychess.game.ai
 
 import com.armychess.game.logic.Piece
@@ -10,5 +9,5 @@ object ChessAI {
         if (movable.isEmpty()) return null
         val selected = movable.random()
         return Pair(selected.row + 1, selected.col)
-    }
+    }
 }
